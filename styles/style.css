@@ -1,0 +1,308 @@
+* {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    /* background: #000; */
+    min-height: 200vh;
+}
+
+
+/* Navbar Styles */
+
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100;
+}
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header .logo span {
+    color: #ff0157;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: 0.6s;
+}
+
+header ul li a:hover {
+    color: #ff0157;
+    transition: 0.3s;
+}
+
+/* Hero */
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../assets/background/pexels-picjumbocom-196659.jpg);
+    background-size: cover;
+    /* opacity: 0.15; */
+}
+
+.banner .content {
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .content h2 {
+    font-size: 5em;
+    color: #fff;
+}
+
+.banner .content p {
+    font-size: 1em;
+    color: #fff;
+}
+
+/* Red Button */
+.btn {
+    font-size: 1em;
+    color: #fff;
+    background: rgba(255, 1, 87,0.5);
+    border-radius: 3px;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+.btn:hover {
+    letter-spacing: 6px;
+}
+
+/* Other Common Classes */
+section {
+    padding: 100px;
+}
+
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50 {
+    position: relative;
+    width: 48%;
+}
+
+.titleText {
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.titleText span {
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.row .col50 .imgBx {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.row .col50 .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Services Section */
+.services {
+    background: #d0d0d0;
+    padding: 100px;
+    text-align: center;
+}
+
+.services .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.services .container .serviceBx {
+    position: relative;
+    background: #fff;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+.services .container .serviceBx img {
+    max-width: 100px;
+}
+
+.services .container .serviceBx h2 {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/* Projects Section */
+.projects {
+    padding-top: 300px;
+    margin-top: -300px;
+    background: #fff;
+}
+
+.projects .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.projects .content .box {
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+
+.projects .content .box .imgBx {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.projects .content .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(70%);
+    transition: 0.6s;
+}
+
+.projects .content .box .imgBx img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+
+.projects .content .box .text {
+    padding: 15px 0 5px;
+}
+
+.projects .content .box .text h3 {
+    font-weight: 400;
+    color: #111;
+}
+
+.projects .btn {
+    background: #ff3d6e;
+}
+
+/* Footer Section */
+footer {
+    position: relative;
+    width: 100%;
+    background: #ff3d6e;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .socialIcons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+footer .socialIcons li {
+    list-style: none;
+}
+
+footer .socialIcons li a {
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.6s;
+}
+
+footer .socialIcons li a:hover {
+    transform: translateY(-10px);
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+}
